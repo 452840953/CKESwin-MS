@@ -13,7 +13,7 @@ def main():
     files = [p for p in ROOT.rglob('*') if p.is_file() and '.git' not in p.relative_to(ROOT).parts]
     for path in files:
         relative = path.relative_to(ROOT).as_posix()
-        if path.name != '.gitignore' and path.suffix not in ALLOWED_SUFFIXES:
+        if path.name not in {'.gitignore', 'LICENSE'} and path.suffix not in ALLOWED_SUFFIXES:
             failures.append(f'Non-source artifact: {relative}')
         if path.suffix == '.json' and relative not in ALLOWED_JSON:
             failures.append(f'Unexpected JSON artifact: {relative}')
