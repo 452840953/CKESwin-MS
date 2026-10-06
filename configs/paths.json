@@ -1,0 +1,7 @@
+{
+  "IMAGEROOT": "inputs/images",
+  "SAVEROOT": "inputs/graphs",
+  "YOLO_MODEL_PATH": "external_weights/vessel_detector.pt",
+  "SAM_CHECKPOINT": "external_weights/sam_vit_h.pth",
+  "DEVICE": "cuda"
+}

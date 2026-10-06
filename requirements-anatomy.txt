@@ -1,0 +1,3 @@
+# Only required when building graphs from images rather than loading a graph cache.
+ultralytics
+segment-anything

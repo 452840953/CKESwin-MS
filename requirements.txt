@@ -1,0 +1,16 @@
+# Install a compatible torch/torchvision build for your platform first.
+# These are direct runtime dependencies, not a recovered historical lock file.
+torch
+torchvision
+torch-geometric
+timm==1.0.22
+numpy
+pandas
+Pillow
+matplotlib
+scikit-learn
+scipy
+scikit-image
+networkx
+opencv-python
+joblib

@@ -1,0 +1,180 @@
+[
+  {
+    "source_root": "original_code",
+    "source": "train_tri_modal_swin_fusion_v3_2.py",
+    "destination": "src/train_tri_modal_swin_fusion_v3_2.py",
+    "source_sha256": "2c7030424d70b08bf8c6b62123cf27c637cc6b56634cbd885c9f5b4817dcedfa",
+    "packaged_sha256": "9e2f35796fed263c40397a6f5f370fa824d1927fbe80189229db9018bc8a4610"
+  },
+  {
+    "source_root": "original_code",
+    "source": "FusionDataset.py",
+    "destination": "src/FusionDataset.py",
+    "source_sha256": "f718b493f1cb832a232d0e0585d7b31922f4abe02d1ecf8ecf8fd4fe543af960",
+    "packaged_sha256": "5c6731ada96b8f6e262ce8206c5744c5543c9de9dc11ddb3920254bb2727de34"
+  },
+  {
+    "source_root": "original_code",
+    "source": "dograph.py",
+    "destination": "src/dograph.py",
+    "source_sha256": "d4796b594635efae35de95a41136f8fa15365c377dc16c4c5c1615ee60d95716",
+    "packaged_sha256": "3c15ddab8fa268462d6b1952cc269bfce662fa3e6293e54618b959d9a6e9fbae"
+  },
+  {
+    "source_root": "original_code",
+    "source": "util/data_module.py",
+    "destination": "src/util/data_module.py",
+    "source_sha256": "a866cc230f5ad01ffc6e3d565560e4d0fa912387baac57796b4603ee92089283",
+    "packaged_sha256": "a866cc230f5ad01ffc6e3d565560e4d0fa912387baac57796b4603ee92089283"
+  },
+  {
+    "source_root": "original_code",
+    "source": "util/split_util.py",
+    "destination": "src/util/split_util.py",
+    "source_sha256": "f8406ec2e1da677b124723c9d19e79ccd0c0b26b5dce9a83ea9d2f16081c2cfe",
+    "packaged_sha256": "ff9bad39c26765d4bc96b980c12c5bb449aea7c712d37ddffb8d5066d7566f1b"
+  },
+  {
+    "source_root": "original_code",
+    "source": "util/gine_util.py",
+    "destination": "src/util/gine_util.py",
+    "source_sha256": "bd135f81a28d4fb2f43683c282c9c2ab3c65f08f69b2bc6eb6478b38d90bd8d1",
+    "packaged_sha256": "159451bba69ce53968430cc079c900571ae76053c5fa4507ba2055d60bce8f5f",
+    "extracted_functions": [
+      "count_by_class",
+      "load_specimens_from_txt",
+      "path_contains_any_specimen",
+      "pretty_table"
+    ]
+  },
+  {
+    "source_root": "original_code",
+    "source": "util/fusion_debug.py",
+    "destination": "src/util/fusion_debug.py",
+    "source_sha256": "ecbbac80bf78d0b85877fba08b6642cc015485bdf0f342d4b2aeba1d5d90eb1c",
+    "packaged_sha256": "063aaaca88be5623e929ea9c4cc876dde7c22a50d8b62c93dd0a56af715adc89"
+  },
+  {
+    "source_root": "original_code",
+    "source": "util/fusion_utils.py",
+    "destination": "src/util/fusion_utils.py",
+    "source_sha256": "c0a0ee51019826e2104c26788355204a432b15755b8c0a1ec471631c94cb3c49",
+    "packaged_sha256": "c8644b78fa566e1ae9c7978f0c74a950f6ad4816a69ca4370d3c6999072c15a0",
+    "extracted_functions": [
+      "_collect_specimens",
+      "_fmt_eta",
+      "_get_img_path",
+      "_log_split_report",
+      "_norm_sid",
+      "accuracy_top1",
+      "check_rf_coverage",
+      "select_device"
+    ]
+  },
+  {
+    "source_root": "original_code",
+    "source": "util/logger_utils.py",
+    "destination": "src/util/logger_utils.py",
+    "source_sha256": "8b08684bd9da82d716873e2dd76037dfa6f7f08865184b406c5b5536c4f3484e",
+    "packaged_sha256": "b09466e2339df481431bef1f2eaf380fcd4e0068fa019d2b20dae25b9274fdb4"
+  },
+  {
+    "source_root": "original_code",
+    "source": "util/graph_create.py",
+    "destination": "src/util/graph_create.py",
+    "source_sha256": "eb38143f827a6dce30c77efe4ae2a92b4466f4624612d5e5486f4156e11e8859",
+    "packaged_sha256": "5d9b0b90c27664e96b39bf24e77ae3838330f49a0db347807f01e8e5589ca948"
+  },
+  {
+    "source_root": "original_code",
+    "source": "create_graph/config.py",
+    "destination": "src/create_graph/config.py",
+    "source_sha256": "d73a3a3fceb527b3a2ad340bd3a0d2329dd3b184483ee108b1a568e4794f394f",
+    "packaged_sha256": "5bb45eaf5ab9cff2703aadf157c3cacca4c026f7d19de7aea7dabd56544bf8ed"
+  },
+  {
+    "source_root": "original_code",
+    "source": "create_graph/vision/detect.py",
+    "destination": "src/create_graph/vision/detect.py",
+    "source_sha256": "7e3fcc40e89b526e64070a9cf6de4c3f4ef961d8c4836dc22ba3bd7e8b7d4b9d",
+    "packaged_sha256": "b081b6ad8b33b91b0bd2faa4522c6267d1354f4e74473ae4832d810471fb5b3c"
+  },
+  {
+    "source_root": "original_code",
+    "source": "create_graph/vision/sam_seg.py",
+    "destination": "src/create_graph/vision/sam_seg.py",
+    "source_sha256": "44473aee5b9c76dabc7587276de08e497dcb9f54806a6562bf32a84d1088f7eb",
+    "packaged_sha256": "b08f87c37c2a2372570f3a851b536fed3b1f9ba54b8454ab4d9ae7273a8bb8a7"
+  },
+  {
+    "source_root": "original_code",
+    "source": "create_graph/graph/build.py",
+    "destination": "src/create_graph/graph/build.py",
+    "source_sha256": "4dbb1c5d38773b4f3269eafa83492f4299f98197ddec4599c2ba8b625146df46",
+    "packaged_sha256": "4dbb1c5d38773b4f3269eafa83492f4299f98197ddec4599c2ba8b625146df46"
+  },
+  {
+    "source_root": "original_code",
+    "source": "create_graph/graph/prune.py",
+    "destination": "src/create_graph/graph/prune.py",
+    "source_sha256": "a3a834be82f8b4c8055865987b685c7327db7c08dcb20f31243c28ddf653a073",
+    "packaged_sha256": "a3a834be82f8b4c8055865987b685c7327db7c08dcb20f31243c28ddf653a073"
+  },
+  {
+    "source_root": "original_code",
+    "source": "create_graph/graph/visualize.py",
+    "destination": "src/create_graph/graph/visualize.py",
+    "source_sha256": "6186b42f2a1cfc12aeb18cb8b263201203f5c901dc8bd18b761a2b063c490c8e",
+    "packaged_sha256": "6186b42f2a1cfc12aeb18cb8b263201203f5c901dc8bd18b761a2b063c490c8e"
+  },
+  {
+    "source_root": "original_code",
+    "source": "test/test_trimodal_swin_fusion.py",
+    "destination": "src/evaluation/visual.py",
+    "source_sha256": "d649f3d0532d52e13e1278f6ebb2644c9b20b69bb07611b576072512febd39da",
+    "packaged_sha256": "652b238ab9def0c5539e43f259503075ea9728dcbf86d129e15d08dc983d39c6"
+  },
+  {
+    "source_root": "original_code",
+    "source": "test/stacking_fusion_test.py",
+    "destination": "src/evaluation/fusion.py",
+    "source_sha256": "34b18b05a7a3c320433a86dba6444911fc2e9f6c7abdbe2d5d860f17eb4931ab",
+    "packaged_sha256": "8f20b92fa4500be3bba5dbc0a56f1b5de147e54c9103c54e63b708be59e60b8a"
+  },
+  {
+    "source_root": "local_ms_archive",
+    "source": "最佳分箱及代码/machLearn2.py",
+    "destination": "src/chemistry/rf_helpers.py",
+    "source_sha256": "4fc42e6f6dc6b9ba262e6eec22794812fd93de1654548ad75162c1dfebf52f45",
+    "extracted_functions": [
+      "read_csv_auto_encoding",
+      "ensure_numeric_df",
+      "_save_txt",
+      "summarize_split",
+      "_read_fixed_eval_groups",
+      "train_eval_split_fixed_by_groups",
+      "assert_no_leak",
+      "compute_metrics",
+      "_to_builtin",
+      "save_json",
+      "save_df"
+    ],
+    "packaged_sha256": "2c42160e0c1dcf99021e0a6b9f53b8467cfc4e3c8af5ae7de246845fa769d74a"
+  },
+  {
+    "source_root": "paper_visual_config",
+    "source": "ckeswin_cfg.json",
+    "destination": "configs/visual.json",
+    "source_sha256": "8883afe5ba4b8e1f70cd706dea351bb1c7745116a334592f816885b3f3e56745",
+    "packaged_sha256": "e14db5d189cf64eeb1cfd742fb37f5378a130007b828e141785719db7804d21f",
+    "extraction": "configuration only; no results copied"
+  },
+  {
+    "source_root": "paper_rf_selection",
+    "source": "summary_RandomForest.json",
+    "destination": "configs/rf.json",
+    "source_sha256": "73cea61532b06c11cd56049dad900f4bf43ae53a31b810d9554747c0169ead00",
+    "packaged_sha256": "b46aafb48def014df03991b9165127c5b3cc787f534dfac009f58f58c945fa88",
+    "extraction": "configuration only; no results copied"
+  }
+]

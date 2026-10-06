@@ -1,0 +1,2 @@
+# Only required for the original Bayesian RF search (--search bayes).
+scikit-optimize
