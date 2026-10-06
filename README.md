@@ -112,6 +112,7 @@ not establish bit-for-bit historical equivalence.
 
 ## Publication metadata
 
-The publication DOI and author-selected license have not been supplied. No DOI,
-license or permission to redistribute third-party weights is invented. Confirm
-the project license before public release and retain applicable dependency notices.
+The code is released under the MIT License, copyright 2026 zwh. The publication
+DOI has not yet been supplied, so no DOI is stated here. Third-party model weights
+are not distributed; users must follow the licenses and notices applicable to
+their own external dependencies and checkpoints.
