@@ -3,7 +3,7 @@
 [中文说明](README_zh.md)
 
 Core implementation accompanying **Reducing Persistent Specimen-Level Errors in
-Pterocarpus Wood Identification with Anatomical Knowledge and Chemical Fingerprints**,
+Pterocarpus Wood Identification with Anatomical Knowledge-Guided Learning and Chemical Fingerprints**,
 aligned to the local KBS v5.25 manuscript.
 
 ## Layout
