@@ -14,7 +14,6 @@
 | `src/evaluation/visual.py` | CKESwin 测试集评估 |
 | `src/evaluation/fusion.py` | 21 参数分数融合头的拟合与测试 |
 | `configs/` | 便携路径、论文视觉训练配置和 RF 参数 |
-| `docs/` | 输入约定与论文对应关系 |
 | `tests/`、`tools/` | 测试与辅助工具 |
 
 文件名中的 `tri_modal` 指图、全局图像和区域图像三个视觉表征；质谱通过后续融合头接入。
@@ -34,7 +33,3 @@ python run.py fuse --run_dir outputs/ckeswin --weights best.pt --rf_csv outputs/
 ```
 
 RF 导出后，先核对概率列顺序与视觉类别顺序，再把 `visual.json` 的 `rf_csv` 指向导出的 CSV。已有图缓存时可跳过构图。
-
-默认 RF 入口使用论文固定参数；`--search bayes`/`--search random` 可重跑原代码的 RF 参数搜索。300 轮视觉训练、辅助损失退火参数等按已归档运行配置恢复，不采用后来被改动的脚本默认值。
-
-代码采用 MIT License，版权主体为 zwh。论文 DOI 尚未提供，因此没有填写 DOI。

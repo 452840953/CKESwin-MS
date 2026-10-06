@@ -24,7 +24,6 @@ src/
   evaluation/                   Visual evaluation and diagonal score fusion
 tests/                          Tests
 tools/check_package.py          Package inventory and syntax checks
-docs/                           Input documentation and paper correspondence
 ```
 
 The word “tri-modal” in the main module name refers to **graph, global-image and
@@ -45,22 +44,6 @@ python -m pip install -r requirements-search.txt
 
 `timm==1.0.22` is the compatibility target used for this package.
 
-## External inputs
-
-Edit `configs/paths.json` and `configs/visual.json`. Run commands from the repository
-root; relative paths resolve against the working directory. Environment variables
-override the anatomy paths.
-
-See [the input contract](docs/INPUTS.md) before running. In particular:
-
-- Images must be grouped into species directories. Graph class order and RF
-  probability-column order must agree.
-- Use a DART spectrum table that has already been binned and thresholded.
-- Existing graph caches may contain old image paths; use `IMAGEROOT` and, if needed,
-  `CKESWIN_ORIGINAL_IMAGE_ROOT` to remap them.
-- Configure the Swin pretraining and YOLO/SAM checkpoint paths before running the
-  corresponding commands.
-
 ## Main commands
 
 ```sh
@@ -79,14 +62,3 @@ python run.py evaluate --run_dir outputs/ckeswin --weights best.pt
 # 5. Fit the 21-parameter head on training + validation pairs, then evaluate held-out pairs.
 python run.py fuse --run_dir outputs/ckeswin --weights best.pt --rf_csv outputs/ms_rf/ms_probabilities.csv --stacking_mode diag
 ```
-
-RF fitting defaults to the paper-selected hyperparameters (1,000 trees, depth 26).
-`--search bayes` or `--search random` selects the respective original RF search
-space, using five specimen-grouped 75:25 splits of the non-test pool. The held-out
-specimens are excluded from fitting/search. The fixed route does not repeat model
-selection.
-
-## Publication metadata
-
-The code is released under the MIT License, copyright 2026 zwh. The publication
-DOI has not yet been supplied, so no DOI is stated here.

@@ -1,12 +1,10 @@
 """Validate a source-only package without importing ML libraries or writing files."""
 import ast
-import hashlib
-import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED_SUFFIXES = {'.py', '.md', '.json', '.txt'}
-ALLOWED_JSON = {'configs/paths.json', 'configs/visual.json', 'configs/rf.json', 'docs/source_manifest.json'}
+ALLOWED_JSON = {'configs/paths.json', 'configs/visual.json', 'configs/rf.json'}
 
 def main():
     failures = []
@@ -24,14 +22,9 @@ def main():
                 ast.parse(path.read_text(encoding='utf-8-sig'), filename=relative)
             except SyntaxError as exc:
                 failures.append(str(exc))
-    manifest = json.loads((ROOT / 'docs/source_manifest.json').read_text(encoding='utf-8'))
-    for item in manifest:
-        actual = hashlib.sha256((ROOT / item['destination']).read_bytes()).hexdigest()
-        if actual != item['packaged_sha256']:
-            failures.append(f"Changed extracted source: {item['destination']}")
     if failures:
         raise SystemExit('\n'.join(failures))
-    print(f'PASS: {len(files)} source/config/document files; {len(manifest)} source mappings; no bundled data, weights or results.')
+    print(f'PASS: {len(files)} source and configuration files.')
 
 if __name__ == '__main__':
     main()
